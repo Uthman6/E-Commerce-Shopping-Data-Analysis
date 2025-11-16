@@ -28,19 +28,10 @@ This README is structured to facilitate the documentation of analysis results. F
 This section covers the initial viewing and quality assessment of the dataset.
 
 Query 1.1: View Entire Table (Reference Only)
-
-SELECT * FROM sakila.`shooping data`;
-
-
-
-$$Insert Screenshot of Query 1.1 Result Here$$
+![a display of results](1.jpg)
 
 Query 1.2: Find Duplicate Rows (Integrity Check)
-
-SELECT Gender,Category,Location,Color, COUNT(*) AS duplicate FROM sakila.`shooping data`
-GROUP BY Gender,Category,Location,Color HAVING COUNT(*)>1;
-
-
+![a display of results](2.jpg)
 
 $$Insert Screenshot of Query 1.2 Result Here$$
 
