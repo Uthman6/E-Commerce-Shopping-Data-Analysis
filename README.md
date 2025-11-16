@@ -28,10 +28,10 @@ This README is structured to facilitate the documentation of analysis results. F
 This section covers the initial viewing and quality assessment of the dataset.
 
 Query 1.1: View Entire Table (Reference Only)
-![a display of results](1.jpg)
+![a display of results](1.png)
 
 Query 1.2: Find Duplicate Rows (Integrity Check)
-![a display of results](2.jpg)
+![a display of results](2.png)
 
 $$Insert Screenshot of Query 1.2 Result Here$$
 
