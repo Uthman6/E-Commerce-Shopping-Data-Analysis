@@ -75,20 +75,12 @@ Query 3.5: Average Purchase Amount (AOV)
 ![a display of results](13.png)
 
 Query 3.6: Maximum Purchase
+![a display of results](14.png)
 
-SELECT MAX(PurchaseAmount) AS Maximum_Purchase FROM sakila.`shooping data`;
-
-
-
-$$Insert Screenshot of Query 3.6 Result Here$$
 
 Query 3.7: Minimum Purchase
 
-SELECT MIN(PurchaseAmount) AS Minimun_Purchase FROM sakila.`shooping data`;
-
-
-
-$$Insert Screenshot of Query 3.7 Result Here$$
+![a display of results](15.png)
 
 4. Customer Behavior Analysis
 
@@ -96,29 +88,13 @@ This section identifies top spenders, popular products, and active markets.
 
 Query 4.1: Cumulative Spend by Gender
 
-SELECT Gender,SUM(PurchaseAmount)AS Total_Spend FROM sakila.`shooping data` GROUP BY Gender;
-
-
-
-$$Insert Screenshot of Query 4.1 Result Here$$
+![a display of results](16.png)
 
 Query 4.2: Most Purchased Items (Top 10)
-
-SELECT ItemPurchased, COUNT(*) AS PurchaseCount FROM sakila.`shooping data`
-GROUP BY ItemPurchased ORDER BY PurchaseCount  LIMIT 10;
-
-
-
-$$Insert Screenshot of Query 4.2 Result Here$$
+![a display of results](17.png)
 
 Query 4.3: Most Active Location
-
-SELECT Location, COUNT(*) AS Total_Purchase FROM sakila.`shooping data` 
-GROUP BY Location ORDER BY Total_Purchase DESC;
-
-
-
-$$Insert Screenshot of Query 4.3 Result Here$$
+![a display of results](18.png)
 
 5. Rating and Satisfaction Insights
 
@@ -126,21 +102,11 @@ This section measures product satisfaction via average review ratings.
 
 Query 5.1: Average Rating per Category
 
-SELECT Category, AVG(ReviewRating) AS Avg_Rating FROM sakila.`shooping data` 
-GROUP BY Category ORDER BY Avg_Rating DESC;
-
-
-
-$$Insert Screenshot of Query 5.1 Result Here$$
+![a display of results](19.png)
 
 Query 5.2: Low Rating Items (Customer Dissatisfaction)
 
-SELECT ItemPurchased, AVG(ReviewRating) AS Avg_Rating FROM sakila.`shooping data` 
-GROUP BY ItemPurchased  HAVING AVG(ReviewRating) ORDER BY Avg_Rating ;
-
-
-
-$$Insert Screenshot of Query 5.2 Result Here$$
+![a display of results](20.png)
 
 6. Promotional and Discount Analysis
 
@@ -148,29 +114,14 @@ This section evaluates the adoption and financial impact of discounts.
 
 Query 6.1: Promo Code Usage Count
 
-SELECT PromoCodeUsed, COUNT(*) AS Usage_count FROM sakila.`shooping data` 
-GROUP BY PromoCodeUsed;
-
-
-
-$$Insert Screenshot of Query 6.1 Result Here$$
+![a display of results](21.png)
 
 Query 6.2: Average Discount Given
 
-SELECT AVG(DiscountValue) AS Avg_Discount FROM sakila.`shooping data` ;
-
-
-
-$$Insert Screenshot of Query 6.2 Result Here$$
+![a display of results](22.png)
 
 Query 6.3: Do Promo Users Spend More (AOV Comparison)
-
-SELECT PromoCodeUsed, AVG(PurchaseAmount) AS Avg_Spend FROM sakila.`shooping data` 
-GROUP BY PromoCodeUsed;
-
-
-
-$$Insert Screenshot of Query 6.3 Result Here$$
+![a display of results](23.png)
 
 7. Shipping and Payment Preferences
 
@@ -178,39 +129,19 @@ This section analyzes logistical and checkout choices.
 
 Query 7.1: Most Used Shipping Method (Count)
 
-SELECT ShippingType, COUNT(*) AS UsageCount FROM sakila.`shooping data` 
-GROUP BY ShippingType ORDER BY UsageCount DESC;
-
-
-
-$$Insert Screenshot of Query 7.1 Result Here$$
+![a display of results](24.png)
 
 Query 7.2: Total Spending by Shipping Method
 
-SELECT ShippingType, SUM(PurchaseAmount)AS Total_spend FROM sakila.`shooping data` 
-GROUP BY ShippingType ORDER BY Total_spend;
-
-
-
-$$Insert Screenshot of Query 7.2 Result Here$$
+![a display of results](25.png)
 
 Query 7.3: Most Popular Payment Method (Count)
 
-SELECT PaymentMethod, COUNT(*) AS Count FROM sakila.`shooping data` GROUP BY PaymentMethod ORDER BY Count DESC;
-
-
-
-$$Insert Screenshot of Query 7.3 Result Here$$
+![a display of results](26.png)
 
 Query 7.4: Total Purchase by Payment Method (Revenue)
 
-SELECT PaymentMethod,
-SUM(PurchaseAmount) AS Total_Purchase_By_paymentMethod FROM sakila.`shooping data` 
-GROUP BY PaymentMethod ORDER BY Total_Purchase_By_paymentMethod;
-
-
-
-$$Insert Screenshot of Query 7.4 Result Here$$
+![a display of results](27.png)
 
 8. Loyalty, Subscriptions, and Product Attributes
 
@@ -218,39 +149,20 @@ This final section assesses retention and granular product-level insights.
 
 Query 8.1: Subscription Status Breakdown
 
-SELECT SubscriptionStatus, COUNT(*) AS users FROM sakila.`shooping data` 
-GROUP BY SubscriptionStatus;
-
-
-
-$$Insert Screenshot of Query 8.1 Result Here$$
+![a display of results](28.png)
 
 Query 8.2: Do Subscribers Spend More (AOV Comparison)
 
-SELECT SubscriptionStatus, AVG(PurchaseAmount) AS Avg_Spend FROM sakila.`shooping data` 
-GROUP BY SubscriptionStatus;
-
-
-
-$$Insert Screenshot of Query 8.2 Result Here$$
+![a display of results](29.png)
 
 Query 8.3: Average Previous Purchases (Retention Metric)
 
-SELECT AVG(PreviousPurchases) AS Avg_PreviousPurchases FROM sakila.`shooping data` ;
-
-
-
-$$Insert Screenshot of Query 8.3 Result Here$$
+![a display of results](30.png)
 
 Query 8.4: Most Popular Color
 
-SELECT Color, COUNT(*) AS Count FROM sakila.`shooping data` GROUP BY Color ORDER BY Count ;
-
-
-
-$$Insert Screenshot of Query 8.4 Result Here$$
+![a display of results](31.png)
 
 Query 8.5: Popular Size
 
-SELECT Size, COUNT(*) As Count FROM sakila.`shooping data`  GROUP BY Size ORDER BY Count DESC;
-
+![a display of results](33.png)
