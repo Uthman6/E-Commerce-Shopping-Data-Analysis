@@ -57,46 +57,22 @@ This section focuses on the total financial performance and purchase value metri
 
 Query 3.1: Total Purchase (Total Revenue)
 
-SELECT SUM(PurchaseAmount) AS Total_Purchase FROM sakila.`shooping data`;
-
-
-
-$$Insert Screenshot of Query 3.1 Result Here$$
+![a display of results](9.png)
 
 Query 3.2: Total Purchase By Category
 
-SELECT Category,SUM(PurchaseAmount) AS Category_purchase FROM sakila.`shooping data`
-GROUP BY Category ORDER BY Category_Purchase;
-
-
-
-$$Insert Screenshot of Query 3.2 Result Here$$
+![a display of results](10.png)
 
 Query 3.3: Total Purchase By Gender
-
-SELECT Gender, SUM(PurchaseAmount) AS Total_Purchase_By_Gender FROM sakila.`shooping data`
-GROUP BY Gender ORDER BY Total_Purchase_By_Gender;
-
-
-
-$$Insert Screenshot of Query 3.3 Result Here$$
+![a display of results](11.png)
 
 Query 3.4: Total Purchase BY Season
 
-SELECT Season, SUM(PurchaseAmount) AS Total_Purchase_By_Season FROM sakila.`shooping data`
-GROUP BY Season ORDER BY Total_Purchase_By_Season;
-
-
-
-$$Insert Screenshot of Query 3.4 Result Here$$
+![a display of results](12.png)
 
 Query 3.5: Average Purchase Amount (AOV)
 
-SELECT AVG(PurchaseAmount) AS Average_Purchase FROM sakila.`shooping data`;
-
-
-
-$$Insert Screenshot of Query 3.5 Result Here$$
+![a display of results](13.png)
 
 Query 3.6: Maximum Purchase
 
