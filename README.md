@@ -31,7 +31,7 @@ Query 1.1: View Entire Table (Reference Only)
 ![a display of results](1.png)
 
 Query 1.2: Find Duplicate Rows (Integrity Check)
-![a display of results](2.png)
+![a display of results](4.png)
 
 $$Insert Screenshot of Query 1.2 Result Here$$
 
