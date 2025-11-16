@@ -33,45 +33,23 @@ Query 1.1: View Entire Table (Reference Only)
 Query 1.2: Find Duplicate Rows (Integrity Check)
 ![a display of results](4.png)
 
-$$Insert Screenshot of Query 1.2 Result Here$$
-
 Query 1.3: Detail for a Specific Customer ID (Quality Check)
 
-SELECT CustomerID,AgeGroup,Gender,ItemPurchased,Category,PurchaseAmount,Location,Size,Color,Season,ReviewRating
- FROM sakila.`shooping data`
-WHERE CustomerID=100;
-
-
-
-$$Insert Screenshot of Query 1.3 Result Here$$
+![a display of results](5.png)
 
 2. Basic Data Overview
 
 This section calculates core metrics on the size and distribution of the customer base.
 
 Query 2.1: Total Customer Count
-
-SELECT COUNT(*) AS Total_Records FROM  sakila.`shooping data`;
-
-
-
-$$Insert Screenshot of Query 2.1 Result Here$$
+![a display of results](6.png)
 
 Query 2.2: Gender Distribution
 
-SELECT Gender, COUNT(*) AS count FROM sakila.`shooping data` GROUP BY Gender;
-
-
-
-$$Insert Screenshot of Query 2.2 Result Here$$
+![a display of results](7.png)
 
 Query 2.3: Age Group Distribution
-
-SELECT AgeGroup,COUNT(*) AS count FROM sakila.`shooping data`GROUP BY AgeGroup;
-
-
-
-$$Insert Screenshot of Query 2.3 Result Here$$
+![a display of results](8.png)
 
 3. Revenue and Purchase Insights
 
